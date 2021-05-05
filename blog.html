@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог о кофе</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/animate.min.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- header -->
+    <header class="header">
+      <a href="index.html"><img class="header__logo" src="images/logo.svg" alt="single-step-logo"></a>
+      <a href="javascript: menuToggler();" class="menu__toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <nav class="menu menu_vertical">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="shop.html">Каталог</a></li>
+          <li class="menu__item"><a href="cooperation.html">Сотрудничество</a></li>
+          <li class="menu__item"><a href="blog.html">Блог</a></li>
+          <li class="menu__item"><a href="about.html">О нас</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+      <h1>Блог о кофе</h1>
+      <!-- banner -->
+      <div class="banner">
+        <img src="images/blog-banner.gif" alt="workspace-img">
+      </div>
+
+      <!-- blog description -->
+      <div class="text">
+        <p>Мы абсолютно уверены, что знать всё - невозможно. Но обязательно нужно к этому стремиться! :)</p>
+        <p>В команде Single Step мы постоянно задаём себе вопросы и ищем на них ответы, пробуем новое, ошибаемся и делаем выводы. Смотрим, слушаем, читаем, путешествуем. Становимся лучше. И нам хочется делиться.
+          Так появился этот блог.</p>
+        <p>Мы будем делиться информацией, которая интересна нам самим. И будем рады, если вы вместе с нами
+          откроете что-то новое.</p>
+        <p>Вперёд!</p>
+      </div>
+
+      <!-- blogposts preview -->
+      <div class="blog-content">
+        <div class="content">
+          <div class="content__text text-centered">
+            <p class="blogpost-title">Интервью с Габриэлем Агрелли</p>
+            <p class="small-text">Четвертый выпуск нашего проекта<br><span>Insider Coffee Stories</span></p>
+            <hr>
+            Мы поговорили о системах управления на крупной ферме, о том, как килограмм бразильского кофе может помочь в борьбе с изменениями климата и о том, что такое настоящая поддержка.
+            <form action="article4-gabriel.html" class="btn-primary-wrap">
+              <button class="btn-primary btn-blog wow fadeInRight">Перейти</button>
+            </form>
+          </div>
+          <div class="content__image wow fadeInLeft">
+            <img src="images/content/Gabriel-Agrelli.jpg" alt="Gabriel-Agrelli-photo">
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__text text-centered">
+            <p class="blogpost-title">Интервью с Дмитрием Слукиным</p>
+            <p>Третий выпуск нашего проекта<br><span>Insider Coffee Stories</span></p>
+            <hr>
+            Мы поговорили об алгоритмах формирования цен у трейдеров, разобрались в принципах traceability и выяснили, кто же такие кофейные Иисусы.
+            <form action="article3-dmitry.html" class="btn-primary-wrap">
+              <button class="btn-primary btn-blog wow fadeInRight">Перейти</button>
+            </form>
+          </div>
+          <div class="content__image wow fadeInLeft">
+            <img src="images/content/Dmitry-Slukin.jpg" alt="Dmitry-Slukin-photo">
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__text text-centered">
+            <p class="blogpost-title">Интервью с Алехандро Дамиан</p>
+            <p>Второй выпуск нашего проекта<br><span>Insider Coffee Stories</span></p>
+            <hr>
+            Мы поговорили о текущей ситуации в Мексике, роли государства в формировании кофейного рынка и необходимости развития в сфере обработки кофе.
+            <form action="article2-alejandro.html" class="btn-primary-wrap">
+              <button class="btn-primary btn-blog wow fadeInRight">Перейти</button>
+            </form>
+          </div>
+          <div class="content__image wow fadeInLeft">
+            <img src="images/content/Alejandro-Damian.jpg" alt="Alejandro-Damian-photo">
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__text text-centered">
+            <p class="blogpost-title">Интервью с Катрин Паувелс</p>
+            <p>Первый выпуск нашего проекта<br><span>Insider Coffee Stories</span></p>
+            <hr>
+            В этом интервью мы поговорили о ситуации в кофепроизводящих странах Африки, о прогнозах на 2020 и возможностях, которые открыл перед нами кризис.
+            <form action="article1-katrien.html" class="btn-primary-wrap">
+              <button class="btn-primary btn-blog wow fadeInRight">Перейти</button>
+            </form>
+          </div>
+          <div class="content__image wow fadeInLeft">
+            <img src="images/content/Katrien-Pauwels.jpg" alt="Katrien-Pauwels-photo">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__flex-container">
+        <div class="footer__content">
+          Обучение, cотрудничество: singlestepcoffee@gmail.com<br>
+          Отдел продаж: +375 (33) 624-83-28.<br>
+          ООО «Сингл Степ»<br>
+          Юридический адрес: 220007, г. Минск, ул. Могилевская, 33, пом. 28Б
+          Почтовый адрес: 220007, г. Минск, ул. Могилевская, 33, пом. 28Б
+        </div>
+        <div class="footer__logo">
+          <img src="images/logo.svg" alt="single-step-logo">
+        </div>
+        <div class="footer__content">
+          Режим работы интернет-магазина: 9.00-18.00 Пн-Пт.<br>
+          Онлайн-заказ: круглосуточно.<br>
+          Свидетельство о государственной регистрации выдано Мингорисполкомом от 09.10.2019, УНП 193323989<br>
+          Интернет-магазин зарегистрирован в Торговом реестре Республике Беларусь 27.07.2020г Рег.№488024
+        </div>
+      </div>
+      <div class="footer__copy">&copy; 2018 Single Step Coffee Co.</div>
+    </footer>
+    <!-- /footer -->
+  </div>
+
+  <!-- scripts -->
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/wow.min.js"></script>
+</body>
+
+</html>

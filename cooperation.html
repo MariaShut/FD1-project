@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Step. Поставщик кофе для кофеен, ресторанов и офисов</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/animate.min.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- header -->
+    <header class="header">
+      <a href="index.html"><img class="header__logo" src="images/logo.svg" alt="single-step-logo"></a>
+      <a href="javascript: menuToggler();" class="menu__toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <nav class="menu menu_vertical">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="shop.html">Каталог</a></li>
+          <li class="menu__item"><a href="cooperation.html">Сотрудничество</a></li>
+          <li class="menu__item"><a href="blog.html">Блог</a></li>
+          <li class="menu__item"><a href="about.html">О нас</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- main -->
+    <main>
+      <h1>Кофе для кофейни, ресторана и офиса</h1>
+      <h2>Наш опыт &mdash; Ваше преимущество</h2>
+      <!-- banner -->
+      <!-- Чтобы придать форме целостный вид при возвращении к ней по кнопке, айдишник get-price присвоен именно баннеру -->
+      <div class="banner" id="get-price">
+        <img src="images/cooperation-banner.gif" alt="handshake-img">
+      </div>
+
+      <!-- cooperation form -->
+      <form class="cooperation-form wow fadeInUp" action="#">
+        <label>ФИО: *<input type="text" name="name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required></label>
+        <label>Организация:<input type="text" name="company"></label>
+        <label>E-mail: *<input type="email" name="email" required></label>
+        <label>Телефон:<input type="tel" name="tel" pattern="[+][0-9]\d+" placeholder="+XXXXXXXXXXXX"></label>
+        <input type="submit" value="Получить прайс">
+      </form>
+
+      <!-- cooperation content blocks-->
+      <div class="content">
+        <div class="content__text">
+          <p class="content__title wow fadeInLeft">Свежая обжарка</p>
+          <hr class="content__stroke">
+          Только свежеобжаренный кофе способен на 100% раскрыть свой вкусовой потенциал. Каждая партия кофе проходит контрольную органолептическую оценку у нашего руководителя отдела производства, единственного Q-грейдера в Беларуси, Виталия
+          Фильмановича.
+        </div>
+        <div class="content__image">
+          <img src="images/cooperation01.jpg" alt="man-with-a-cup-of-coffee-img">
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <p class="content__title wow fadeInRight">Быстрые и стабильные поставки</p>
+          <hr>
+          Надежные транспортные партнеры и свой логистический склад в Европе дают уверенность в стабильных и своевременных поставках. Вам
+          не стоит беспокоиться о наличии той или иной позиции в длительной перспективе – это наша забота!
+        </div>
+        <div class="content__image">
+          <img src="images/cooperation02.jpg" alt="coffee-delivery-img">
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <p class="content__title wow fadeInLeft">Уникальный ассортимент</p>
+          <hr class="content__stroke">
+          Наш кофе всегда уникален для белорусского рынка, т.к. мы работаем с лучшими трейдерами зеленого зерна, согласно принципам direct trade, что дает возможность привозить именно тот кофе, который будет соответствовать нашим критериям качества,
+          а главное – будет нравиться вам и будет вас удивлять.
+        </div>
+        <div class="content__image">
+          <img src="images/cooperation03.jpg" alt="coffee-packages-img">
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__text">
+          <p class="content__title wow fadeInRight">Обучение бариста</p>
+          <hr class="content__stroke">
+          Всем нашим клиентам мы предоставляем бесплатное обучение в нашем тренинг-центре,
+          а также мониторинг качества приготовления напитков непосредственно на местах. Ведь наш кофе и то, как его готовят – это наша репутация!
+          Также мы всегда готовы помочь подобрать персонал, выбрать и купить кофемашину и другое оборудование, разработать уникальное предложение для ваших гостей.
+        </div>
+        <div class="content__image">
+          <img src="images/cooperation04.jpg" alt="coffee-brewing-img">
+        </div>
+      </div>
+
+      <!-- button up to form -->
+      <form action="#get-price" class="btn-primary-wrap">
+        <button class="btn-primary wow fadeInUp">Получить прайс</button>
+      </form>
+
+      <!-- social media links -->
+      <div class="socialmedia-icons wow fadeInUp">
+        <a href="https://www.facebook.com/singlestepcoffee/" target="_blank">
+          <svg class="socialmedia-icons__facebook" xmlns="http://www.w3.org/2000/svg" height="48px" width="48px" viewBox="0 0 48 48">
+            <path fill="#39a49e"
+              d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/singlestepcoffee/" target="_blank">
+          <svg class="socialmedia-icons__instagram" xmlns="http://www.w3.org/2000/svg" height="48px" width="48px" viewBox="0 0 30 30">
+            <path fill="#39a49e"
+              d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+            </path>
+            <path fill="#39a49e" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path>
+            <path fill="#39a49e"
+              d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__flex-container">
+        <div class="footer__content">
+          Обучение, cотрудничество: singlestepcoffee@gmail.com<br>
+          Отдел продаж: +375 (33) 624-83-28.<br>
+          ООО «Сингл Степ»<br>
+          Юридический адрес: 220007, г. Минск, ул. Могилевская, 33, пом. 28Б
+          Почтовый адрес: 220007, г. Минск, ул. Могилевская, 33, пом. 28Б
+        </div>
+        <div class="footer__logo">
+          <img src="images/logo.svg" alt="single-step-logo">
+        </div>
+        <div class="footer__content">
+          Режим работы интернет-магазина: 9.00-18.00 Пн-Пт.<br>
+          Онлайн-заказ: круглосуточно.<br>
+          Свидетельство о государственной регистрации выдано Мингорисполкомом от 09.10.2019, УНП 193323989<br>
+          Интернет-магазин зарегистрирован в Торговом реестре Республике Беларусь 27.07.2020г Рег.№488024
+        </div>
+      </div>
+      <div class="footer__copy">&copy; 2018 Single Step Coffee Co.</div>
+    </footer>
+    <!-- /footer -->
+  </div>
+
+  <!-- scripts -->
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/wow.min.js"></script>
+</body>
+
+</html>
